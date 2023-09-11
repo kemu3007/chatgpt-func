@@ -5,6 +5,6 @@ cd package
 zip -r ../function .
 
 cd ..
-zip function.zip lambda_function.py
+zip function.zip lambda_function.py .env
 
 aws lambda update-function-code --function-name ${LAMBDA_FUNCTION_NAME} --zip-file fileb://function.zip

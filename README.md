@@ -1,13 +1,15 @@
-## Lambda Function Templete with Custom Library
+## How to use
 
-### How To Use
+1. `python register.py`
+2. `sh deploy.sh`
+3. register lambda function url to discord interaction url
+4. enter `/chatgpt ping` on discord
 
-1. Create Lambda Function by AWS Management Console / CLI.
-2. Create `.env` file.
+## .env Structure
 
-```
-LAMBDA_FUNCTION_NAME=function-name
-```
-
-3. Write required library to `requirements.txt`
-4. Execute `sh deploy.sh`
+OPENAI_SECRET_KEY=
+DISCORD_APP_ID=
+DISCORD_GUILD_ID=
+DISCORD_BOT_TOKEN=
+DISCORD_PUBLIC_KEY=
+LAMBDA_FUNCTION_NAME=
